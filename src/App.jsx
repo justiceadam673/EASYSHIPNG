@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import NavBar from "./components/NavBar";
 import ShowCase from "./components/ShowCase";
@@ -8,6 +9,7 @@ function App() {
       <NavBar />
       <HeroSection />
       <ShowCase />
+      <Footer />
     </main>
   );
 }

@@ -2,9 +2,9 @@ import React from "react";
 
 const Cards = ({ logo, children }) => {
   return (
-    <main>
-      <div className='bg-white rounded-[30px] w-[394px] h-[369px] p-[10px] '>
-        <img src={logo} alt='img' srcSet='' />
+    <main className='mx-[16px] mt-[20px] justify-between items-center'>
+      <div className='bg-white rounded-[30px]  flex flex-col space-y-[13px] w-[378px] h-[369px] pb-[25px] px-[15px] '>
+        <img src={logo} className=' mt-[57px]' srcSet='' />
         {children}
       </div>
     </main>

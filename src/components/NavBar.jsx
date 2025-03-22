@@ -5,12 +5,12 @@ import ButtonBorderStroke from "./UI/ButtonBorderStroke";
 const NavBar = () => {
   return (
     <main>
-      <nav className='absolute top-0 left-0 w-full flex justify-between items-center px-[99px] py-6  bg-opacity-60 backdrop-blur-[22px] h-[95px] shadow-md z-50'>
+      <nav className='absolute top-0 left-0 w-full flex justify-between  items-center px-[77px] py-6  bg-white/30  bg-opacity-60 backdrop-blur-[22px] h-[95px] shadow-md z-50'>
         <section className='flex items-center space-x-2 font-extrabold text-4xl'>
           <img src='./Easyship 1.png' alt='EASY SHIP NG' className='h-10' />
           <h1>EasyShip</h1>
         </section>
-        <ul className='flex space-x-20 text-gray-700 mr-[103px] font-bold'>
+        <ul className='flex  items-center space-x-[75px] text-gray-700  font-bold'>
           <Button>
             <a href='' className='w-[95px] h-[34px] backdrop-blur-[30px]'>
               Home
@@ -26,12 +26,14 @@ const NavBar = () => {
             <a href=''>Contact</a>
           </li>
         </ul>
-        <ButtonBorderStroke className={"h-[34px] w-[156px]"}>
-          <h1>Get a Quote</h1>
-        </ButtonBorderStroke>
-        <Button className={"h-[34px] w-[156px]"}>
-          <h1>Sign Up</h1>
-        </Button>
+        <section className='flex space-x-4 justify-center items-center'>
+          <ButtonBorderStroke className={"h-[34px] w-[156px]"}>
+            <h1>Get a Quote</h1>
+          </ButtonBorderStroke>
+          <Button className={"h-[34px] w-[156px]"}>
+            <h1>Sign Up</h1>
+          </Button>
+        </section>
       </nav>
     </main>
   );
