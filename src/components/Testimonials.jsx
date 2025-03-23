@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import { Pagination, Navigation, Autoplay, Mousewheel } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -75,20 +75,23 @@ const Testimonials = () => {
         What people think about us
       </h2>
       <Swiper
-        modules={[Pagination, Navigation, Autoplay]}
-        spaceBetween={30} // Increased spacing for partial visibility
+        modules={[Pagination, Navigation, Autoplay, Mousewheel]}
+        spaceBetween={30}
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
         loop={true}
-        speed={1000} // Smooth transition speed (1s)
+        speed={1000}
+        allowTouchMove={true}
+        grabCursor={true}
+        mousewheel={{ forceToAxis: true }}
         autoplay={{
-          delay: 3000, // Auto swipe every 3 seconds (3000ms)
-          disableOnInteraction: false, // Keeps autoplay running after user interacts
+          delay: 3000,
+          disableOnInteraction: false,
         }}
         breakpoints={{
           768: { slidesPerView: 2, spaceBetween: 30 },
-          1024: { slidesPerView: 2.5, spaceBetween: 40 }, // 2.5 makes the third card partially visible
+          1024: { slidesPerView: 2.5, spaceBetween: 40 },
         }}
         className='max-w-[1340px] mx-auto'
       >
