@@ -83,7 +83,7 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section className='w-full px-10 py-16'>
-      <h2 className='text-[27px] text-[#000] font-bold text-center mb-[33px]'>
+      <h2 className='text-[27px] text-[#000] font-bold text-center mb-[33px] max-sm:text-[20px] '>
         What people think about us
       </h2>
       <Swiper
@@ -109,23 +109,23 @@ const Testimonials = () => {
       >
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index}>
-            <div className='p-6 w-[full] min-h-[192px] bg-white rounded-[30px] shadow-[30px] flex flex-col justify-between'>
-              <div className='flex items-center space-x-4'>
+            <div className='p-6 w-[full]  min-h-[192px] max-sm:h-[150px] h-[250px] bg-white rounded-[30px] shadow-[30px] flex flex-col justify-between'>
+              <div className='flex items-center  space-x-4'>
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className='w-[80px] h-[80px] rounded-full object-cover'
+                  className='w-[80px] max-sm:w-[60px] max-sm:h-[60px] h-[80px] max-sm:rounded-[100%] rounded-full object-cover'
                 />
                 <div className=' space-x-2 text-[linear-gradient(to_right,#0799DF,#2D3594)]  font-bold text-[24px] '>
                   <div className='flex space-x-[13px]'>
-                    <h3 className='font-bold text-[18px]'>
+                    <h3 className='font-bold max-sm:text-auto max-xl:text-auto max-lg:text-auto text-[18px]'>
                       {testimonial.name}
                     </h3>
-                    <p className='text-sm text-blue-600 text-[18px]'>
-                      {testimonial.role}
+                    <p className='text-sm max-sm:text-auto text-blue-600 text-[18px]'>
+                      {testimonial.role === "Vendor" ? testimonial.role : ""}
                     </p>
                   </div>
-                  <div className='flex space-x-3'>
+                  <div className='flex max-sm:space-x-1 w-4.5 space-x-3'>
                     <img src={testimonial.Rate} />
                     <img src={testimonial.Rate} />
                     <img src={testimonial.Rate} />
@@ -135,10 +135,10 @@ const Testimonials = () => {
                 </div>
                 <img
                   src={testimonial.Question}
-                  className='w-[61.27px] h-[49px] '
+                  className='w-[61.27px] ml-auto max-xl:ml-auto  max-xl:w-[41.27px] max-xl:h-[30px] max-sm:w-[41.27px] max-sm:h-[30px] h-[49px] max-lg:w-[31.27px] max-lg:h-[25px] max-lg:ml-auto '
                 />
               </div>
-              <p className='mx-5 mt-[26.75px] mb-4 text-[#000]/65 text-[15px]'>
+              <p className='mx-5 mt-[26.75px] max-sm:mt-[10px] max-sm:text-auto mb-4 text-[#000]/65 text-[15px]'>
                 {testimonial.review}
               </p>
             </div>

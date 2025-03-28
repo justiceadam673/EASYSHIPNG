@@ -56,7 +56,7 @@ const WhyEasyShip = () => {
               Our team is here to help whenever you need it.
             </p>
           </WhyEasyShipUI>
-          <section className='flex max-sm:flex-col max-sm:items-center max-sm:mt-[25px] mt-[14px] text-[18px]'>
+          <section className='flex max-sm:flex-col max-sm:text-[14px] max-sm:items-center max-sm:mt-[25px] mt-[14px] text-[18px]'>
             <p className='text-[#000]/65'>
               Join thousands of satisfied customers today!{" "}
             </p>

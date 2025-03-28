@@ -6,10 +6,10 @@ import PickUp from "../assets/images/solar_delivery-bold.png";
 
 const HowEastShipWorks = () => {
   return (
-    <main className='mb-[37px] max-sm:mt-70 '>
-      <h1 className='text-center text-[#000] mt-[76px]  text-[27px] font-extrabold'>
+    <main className='mb-[37px] max-sm:mt-60 '>
+      <h1 className='text-center text-[#000] mt-[76px]   text-[27px] font-extrabold max-sm:text-[20px]'>
         How EasyShip Works
-        <section className='flex max-sm:flex-col max-sm:items-center justify-center'>
+        <section className='flex max-sm:flex-col max-md:flex-col max-lg:flex-col max-lg:items-center  max-md:items-center max-sm:items-center max-sm:mt-10 justify-center'>
           <Cards>
             <img src={Shop} className='w-[54px] mx-auto' />
             <h1 className='text-[#000] font-extrabold text-[21px]'>
