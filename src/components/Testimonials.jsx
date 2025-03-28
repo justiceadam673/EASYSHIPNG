@@ -8,6 +8,11 @@ import Jane from "../assets/images/Jane.png";
 import David from "../assets/images/David.png";
 import Ade from "../assets/images/Ade.png";
 import Star from "../assets/images/material-symbols_star.png";
+import Ruth from "../assets/images/Ruth.jpg";
+import Aisha from "../assets/images/Aisha.jpg";
+import Mark from "../assets/images/Mark.jpg";
+import Amed from "../assets/images/Amed.jpg";
+import Colon from "../assets/images/colon.png";
 
 const testimonials = [
   {
@@ -17,6 +22,7 @@ const testimonials = [
       "EasyShip made my shopping experience so smooth! I got my order in just a few hours—super fast and reliable.",
     image: Jane,
     Rate: Star,
+    Question: Colon,
   },
   {
     name: "David K.",
@@ -25,6 +31,7 @@ const testimonials = [
       "Since joining EasyShip, my sales have increased significantly! Customers trust the fast deliveries, and I get more repeat buyers.",
     image: David,
     Rate: Star,
+    Question: Colon,
   },
   {
     name: "Adebayo O.",
@@ -33,45 +40,50 @@ const testimonials = [
       "I love how I can track my order. It gives me peace of mind knowing my package will arrive!",
     image: Ade,
     Rate: Star,
+    Question: Colon,
   },
   {
-    name: "Kimmy Q.",
+    name: "Abdul Q.",
     role: "Customer",
     review:
       "EasyShip made my shopping experience so smooth! I got my order in just a few hours—super fast and reliable.",
-    image: David,
+    image: Mark,
     Rate: Star,
+    Question: Colon,
   },
   {
     name: "Debbie O.",
     role: "Vendor",
     review:
       "Since joining EasyShip, my sales have increased significantly! Customers trust the fast deliveries, and I get more repeat buyers.",
-    image: Jane,
+    image: Ruth,
     Rate: Star,
+    Question: Colon,
   },
   {
-    name: "Mike O.",
+    name: "Sadiq O.",
     role: "Vendor",
     review:
       "I love how I can track my order. It gives me peace of mind knowing my package will arrive!",
-    image: Ade,
+    image: Amed,
     Rate: Star,
+    Question: Colon,
   },
   {
-    name: "Blessing K.",
+    name: "Aisha K.",
     role: "Customer",
     review:
       "EasyShip made my shopping experience so smooth! I got my order in just a few hours—super fast and reliable.",
-    image: Jane,
+    image: Aisha,
     Rate: Star,
+    Question: Colon,
   },
 ];
 
 const Testimonials = () => {
   return (
     <section className='w-full px-10 py-16'>
-      <h2 className='text-[35px] text-[#2B2C4F] font-bold text-center mb-[33px]'>
+      <h2 className='text-[27px] text-[#000] font-bold text-center mb-[33px]'>
         What people think about us
       </h2>
       <Swiper
@@ -97,7 +109,7 @@ const Testimonials = () => {
       >
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index}>
-            <div className='p-6 w-full min-h-[250px] bg-white rounded-[30px] shadow-[30px] flex flex-col justify-between'>
+            <div className='p-6 w-[full] min-h-[192px] bg-white rounded-[30px] shadow-[30px] flex flex-col justify-between'>
               <div className='flex items-center space-x-4'>
                 <img
                   src={testimonial.image}
@@ -106,8 +118,10 @@ const Testimonials = () => {
                 />
                 <div className=' space-x-2 text-[linear-gradient(to_right,#0799DF,#2D3594)]  font-bold text-[24px] '>
                   <div className='flex space-x-[13px]'>
-                    <h3 className='font-bold'>{testimonial.name}</h3>
-                    <p className='text-sm text-blue-600 text-[24px]'>
+                    <h3 className='font-bold text-[18px]'>
+                      {testimonial.name}
+                    </h3>
+                    <p className='text-sm text-blue-600 text-[18px]'>
                       {testimonial.role}
                     </p>
                   </div>
@@ -119,8 +133,12 @@ const Testimonials = () => {
                     <img src={testimonial.Rate} />
                   </div>
                 </div>
+                <img
+                  src={testimonial.Question}
+                  className='w-[61.27px] h-[49px] '
+                />
               </div>
-              <p className='mx-5 mb-4 text-[#2B2C4F]/65'>
+              <p className='mx-5 mt-[26.75px] mb-4 text-[#000]/65 text-[15px]'>
                 {testimonial.review}
               </p>
             </div>

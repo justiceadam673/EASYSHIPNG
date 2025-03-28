@@ -4,45 +4,62 @@ import WhyEasyShipUI from "./WhyEasyShipUI";
 
 const WhyEasyShip = () => {
   return (
-    <main>
-      <section className=' flex h-[382px] w-[1211px]  mt-[91px] mx-[115px]'>
-        <img src={Frame16} alt='' srcSet='' />
-        <section className='h-full text-[#2B2C4F] mt-[15px] ml-[65px]'>
-          <h1 className='w-[394px] h-[43px] mt-[22px] font-[800] text-[30px]'>
+    <main className='w-full max-sm:h-[500.5px] max-md:block flex justify-center mt-[75px] '>
+      <section className=' flex h-[273px] justify-center items-center max-w-[800px]   '>
+        <img
+          src={Frame16}
+          alt=''
+          srcSet=''
+          className='w-[161.25px] max-lg:hidden  h-[161.25px] mt-[38px]'
+        />
+        <section className=' max-md:flex max-sm:items-center max-md:flex-col h-full text-[#000]  ml-[25.5px]'>
+          <h1 className='w-[394px] h-[43px] max-sm:w-auto max-sm:h-auto  mb-[38px] font-[800] text-[27px] max-sm:text-[20px]'>
             Why Choose EasyShip?
           </h1>
           <WhyEasyShipUI>
-            <p>
-              <span className='font-bold'>Fast & Reliable –</span> Speedy
-              deliveries you can count on.
+            <p className='flex max-sm:flex-col max-sm:items-center max-sm:text-[14px] max-sm:mr-[20px] '>
+              <span className='font-bold max-sm:mt-[15px] max-sm:mb-[10px]'>
+                Fast & Reliable <span className='max-sm:hidden'>–</span>
+              </span>{" "}
+              Speedy deliveries you can count on.
             </p>
           </WhyEasyShipUI>
           <WhyEasyShipUI>
-            <p>
-              <span className='font-bold'>Trusted Vendors –</span> Shop from
-              verified and top-rated sellers.
+            <p className='flex max-sm:flex-col max-sm:items-center max-sm:text-[14px] max-sm:mr-[20px] '>
+              <span className='font-bold max-sm:mt-[15px] max-sm:mb-[10px]'>
+                Trusted Vendors <span className='max-sm:hidden'>–</span>
+              </span>{" "}
+              Shop from verified and top-rated sellers.
             </p>
           </WhyEasyShipUI>
           <WhyEasyShipUI>
-            <p>
-              <span className='font-bold'>Secure Payments –</span> Multiple safe
-              and convenient payment options.
+            <p className='flex max-sm:flex-col max-sm:items-center max-sm:text-[14px] max-sm:mr-[20px] '>
+              <span className='font-bold max-sm:mt-[15px] max-sm:mb-[10px]'>
+                Secure Payments <span className='max-sm:hidden'>–</span>
+              </span>{" "}
+              Multiple safe and convenient payment options.
             </p>
           </WhyEasyShipUI>
           <WhyEasyShipUI>
-            <p>
-              <span className='font-bold'>Real-Time Tracking –</span> Know
-              exactly where your package is at any time.
+            <p className='flex max-sm:flex-col max-sm:items-center max-sm:text-[14px] max-sm:mr-[20px] '>
+              <span className='font-bold max-sm:mt-[15px] max-sm:mb-[10px]'>
+                Real-Time Tracking <span className='max-sm:hidden'>–</span>
+              </span>{" "}
+              Know exactly where your package is at any time.
             </p>
           </WhyEasyShipUI>
           <WhyEasyShipUI>
-            <p>
-              <span className='font-bold'>24/7 Support –</span> Our team is here
-              to help whenever you need it.
+            <p className='flex max-sm:flex-col max-sm:items-center max-sm:text-[14px] max-sm:mr-[20px] '>
+              <span className='font-bold max-sm:mt-[15px] max-sm:mb-[10px]'>
+                24/7 Support <span className='max-sm:hidden'>–</span>
+              </span>{" "}
+              Our team is here to help whenever you need it.
             </p>
           </WhyEasyShipUI>
-          <section className='flex mt-[20px] text-[24px]'>
-            <p>Join thousands of satisfied customers today! </p>
+          <section className='flex max-sm:flex-col max-sm:items-center max-sm:mt-[25px] mt-[14px] text-[18px]'>
+            <p className='text-[#000]/65'>
+              Join thousands of satisfied customers today!{" "}
+            </p>
             <a href='' className='text-[#2644A0] hover:underline font-bold'>
               Learn more.
             </a>

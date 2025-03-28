@@ -5,7 +5,7 @@ import ShowCase from "./components/ShowCase";
 
 function App() {
   return (
-    <main className='bg-[#e2e2e2]'>
+    <main className='bg-[#e2e2e2] font-sfpro overflow-x-hidden'>
       <NavBar />
       <HeroSection />
       <ShowCase />

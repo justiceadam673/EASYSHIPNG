@@ -1,47 +1,37 @@
 import React from "react";
-import heroImage from "../assets/images/pexels-500photos-com-15338-93398 1.png";
-import heroStroke from "../assets/images/Frame 8 (1).png";
+import heroImage from "../assets/images/blank-cargo-truck-road 1.png";
 import Button from "./Button";
 import ButtonGray from "./ButtonGray";
 
 const HeroSection = () => {
   return (
     <main>
-      <section className='relative w-full min-h-screen'>
+      <section className='relative w-full h-[696.75px] min-h-screen'>
         <img
           src={heroImage}
           alt='Hero'
-          className='absolute top-0 left-0 w-full h-full object-fill'
+          className=' bg-cover bg-center max-md:object-cover  left-0 w-full h-full'
         />
-        <img
-          src={heroStroke}
-          alt='easyship-stroke'
-          className='absolute top-0 left-0 w-full h-full object-fill opacity-60 z-10'
-        />
-      </section>
-      <section className='absolute top-1/2 left-1/2 transform -translate-x-150 w-[60%] h-[136px] -translate-y-1/2 text-left text-white z-10'>
-        <h1 className='font-semibold text-[64px] leading-[100%] tracking-[0em]'>
-          Fast, Reliable, and
-          <br /> Hassle-Free Deliveries!
-        </h1>
-        <p className='font-medium leading-[100%] m-[10px] tracking-[0%] text-gray-400 text-[20px]'>
-          Bridging the gap between vendors and customers with seamless logistics
-          solutions. Get your orders delivered swiftly and securely.
-        </p>
-        <section className='flex items-center'>
-          {" "}
-          <Button
-            className={"w-[219px] font-bold h-[44px] gap-[10px] p-[10px]"}
-          >
-            Plan an Order
-          </Button>
-          <ButtonGray
-            className={" m-[20px] w-[219px] h-[44px] gap-[10px] p-[10px]"}
-          >
-            Become a Vendor
-          </ButtonGray>
+
+        <div className='absolute inset-0 bg-gradient-to-r from-black/80 to-transparent'></div>
+
+        <section className='absolute top-1/2 left-[5%] sm:left-[10%] md:left-[10%] lg:left-[30%] transform -translate-y-1/2 sm:translate-x-0 lg:-translate-x-1/2 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[50%] max-w-[650px] text-white z-10'>
+          <h1 className='font-semibold text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] leading-tight'>
+            Fast, Reliable, and <br /> Hassle-Free Deliveries!
+          </h1>
+          <p className='font-medium text-gray-300 text-[14px] sm:text-[16px] mt-2'>
+            Bridging the gap between vendors and customers with seamless
+            logistics solutions. Get your orders delivered swiftly and securely.
+          </p>
+          <section className='flex flex-col sm:flex-row sm:space-x-4 mt-4'>
+            <Button className='w-full sm:w-[180px] md:w-[219px] h-[44px]'>
+              Plan an Order
+            </Button>
+            <ButtonGray className='w-full sm:w-[180px] md:w-[219px] h-[44px] mt-2 sm:mt-0'>
+              Become a Vendor
+            </ButtonGray>
+          </section>
         </section>
-        <section className=' z-50'></section>
       </section>
     </main>
   );

@@ -6,36 +6,35 @@ import PickUp from "../assets/images/solar_delivery-bold.png";
 
 const HowEastShipWorks = () => {
   return (
-    <main className='mb-[37px]'>
-      <h1 className='text-center text-[#33345e] mt-[47px]  text-[36px] font-extrabold'>
+    <main className='mb-[37px] max-sm:mt-70 '>
+      <h1 className='text-center text-[#000] mt-[76px]  text-[27px] font-extrabold'>
         How EasyShip Works
-        <section className='flex justify-center'>
+        <section className='flex max-sm:flex-col max-sm:items-center justify-center'>
           <Cards>
-            <img src={Shop} className='w-[161.39px] mx-auto' />
-            <h1 className='text-[#2B2C4F] font-extrabold text-[28px]'>
+            <img src={Shop} className='w-[54px] mx-auto' />
+            <h1 className='text-[#000] font-extrabold text-[21px]'>
               Find Your Product{" "}
             </h1>
-            <p className='text-[#2B2C4F]/65 text-[18px] font-light'>
+            <p className='text-[#000]/65 text-[15px] font-light'>
               Browse and select from trusted vendors.
             </p>
           </Cards>
           <Cards>
-            <img src={Order} className='w-[144.17px] mx-auto' />
-            <h1 className='text-[#2B2C4F] font-extrabold text-[28px]'>
+            <img src={Order} className='w-[54px] mx-auto' />
+            <h1 className='text-[#000] font-extrabold text-[21px]'>
               Place an Order{" "}
             </h1>
-            <p className='text-[#2B2C4F]/65 text-[18px] font-light'>
+            <p className='text-[#000]/65 text-[15px] font-light'>
               Securely pay and confirm your purchase.
             </p>
           </Cards>
           <Cards>
-            <img src={PickUp} className='w-[143px] mx-auto' />
-            <h1 className='text-[#2B2C4F] font-extrabold text-[28px]'>
+            <img src={PickUp} className='w-[54px] mx-auto' />
+            <h1 className='text-[#000] font-extrabold text-[21px]'>
               We Pick & Deliver{" "}
             </h1>
-            <p className='text-[#2B2C4F]/65 text-[18px] font-light'>
-              Our logistics team ensures safe and fast delivery to your
-              doorstep.
+            <p className='text-[#000]/65 text-[15px]  font-light'>
+              Safe and fast delivery to your doorstep.
             </p>
           </Cards>
         </section>

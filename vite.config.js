@@ -4,12 +4,5 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  theme: {
-    extend: {
-      fontFamily: {
-        sfpro: ['"SF Pro Display"', "sans-serif"],
-      },
-    },
-  },
   plugins: [tailwindcss(), react()],
 });
