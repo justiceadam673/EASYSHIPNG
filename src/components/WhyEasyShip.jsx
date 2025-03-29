@@ -10,7 +10,7 @@ const WhyEasyShip = () => {
           src={Frame16}
           alt=''
           srcSet=''
-          className='w-[161.25px] max-lg:hidden  h-[161.25px] mt-[38px]'
+          className='w-[161.25px] max-lg:hidden max-xl:hidden max-md:hidden max-sm:hidden  h-[161.25px] mt-[38px]'
         />
         <section className=' max-md:flex max-sm:items-center max-md:flex-col h-full text-[#000]  ml-[25.5px]'>
           <h1 className='w-[394px] h-[43px] max-sm:w-auto max-sm:h-auto  mb-[38px] font-[800] text-[27px] max-sm:text-[20px]'>
