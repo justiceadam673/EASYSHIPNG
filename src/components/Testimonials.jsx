@@ -109,7 +109,7 @@ const Testimonials = () => {
       >
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index}>
-            <div className='p-6 w-[full]  min-h-[192px] max-sm:h-[150px] h-[250px] bg-white rounded-[30px] shadow-[30px] flex flex-col justify-between'>
+            <div className='p-6 w-[full]   min-h-[192px] max-sm:h-[150px] h-[250px] bg-white rounded-[30px] shadow-[30px] flex flex-col justify-between'>
               <div className='flex items-center  space-x-4'>
                 <img
                   src={testimonial.image}
@@ -138,7 +138,7 @@ const Testimonials = () => {
                   className='w-[61.27px] ml-auto max-xl:ml-auto  max-xl:w-[41.27px] max-xl:h-[30px] max-sm:w-[41.27px] max-sm:h-[30px] h-[49px] max-lg:w-[31.27px] max-lg:h-[25px] max-lg:ml-auto '
                 />
               </div>
-              <p className='mx-5 mt-[26.75px] max-sm:mt-[10px] max-sm:text-auto mb-4 text-[#000]/65 text-[15px]'>
+              <p className='mx-5 mt-[26.75px] max-sm:mt-[5px]  max-sm:text-[12px] mb-4 text-[#000]/65 text-[15px]'>
                 {testimonial.review}
               </p>
             </div>
