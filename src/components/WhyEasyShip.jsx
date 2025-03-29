@@ -4,7 +4,7 @@ import WhyEasyShipUI from "./WhyEasyShipUI";
 
 const WhyEasyShip = () => {
   return (
-    <main className='w-full max-sm:h-[500.5px] max-md:block flex justify-center mt-[75px] '>
+    <main className='w-full flex flex-col items-center mt-[75px] px-6'>
       <section className=' flex h-[273px] justify-center items-center max-w-[800px]   '>
         <img
           src={Frame16}

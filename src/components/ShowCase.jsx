@@ -6,7 +6,7 @@ import Testimonials from "./Testimonials";
 const ShowCase = () => {
   return (
     <main>
-      <div className='h-auto w-[1413]'>
+      <div className='h-auto max-w-[1413px] mx-auto'>
         <WhyEasyShip />
         <HowEastShipWorks />
         <Testimonials />
