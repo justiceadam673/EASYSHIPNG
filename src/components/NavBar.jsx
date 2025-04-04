@@ -14,7 +14,7 @@ const NavBar = () => {
       <nav className='flex justify-between items-center px-8 md:px-16 py-4 h-[71.25px]'>
         <section className='flex items-center space-x-2 font-extrabold text-2xl md:text-4xl'>
           <img src='./Easyship 1.png' alt='EASY SHIP NG' className='h-10' />
-          <h1 className='text-[14.22px] sm:text-[16.22px] md:text-[18.22px] lg:text-[20.22px] xl:text-[24px]'>
+          <h1 className='text-[14.22px] font-heavy sm:text-[16.22px] md:text-[18.22px] lg:text-[20.22px] xl:text-[24px]'>
             EasyShip
           </h1>
         </section>
