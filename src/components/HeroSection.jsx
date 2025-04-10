@@ -1,7 +1,7 @@
 import React from "react";
 import heroImage from "../assets/images/blank-cargo-truck-road 1.png";
 import Button from "./Button";
-import ButtonGray from "./ButtonGray";
+import ButtonBorderStroke from "./UI/ButtonBorderStroke";
 
 const HeroSection = () => {
   return (
@@ -24,12 +24,12 @@ const HeroSection = () => {
             logistics solutions. Get your orders delivered swiftly and securely.
           </p>
           <section className='flex flex-col sm:flex-row sm:space-x-4 mt-4'>
-            <Button className='w-full sm:w-[180px] md:w-[219px] h-[44px]'>
+            <Button className='w-full sm:w-[180px] md:w-[219px] font-bold h-[44px]'>
               Plan an Order
             </Button>
-            <ButtonGray className='w-full sm:w-[180px] md:w-[219px] h-[44px] mt-2 sm:mt-0'>
+            <ButtonBorderStroke className='w-full sm:w-[180px] md:w-[219px] h-[44px] mt-2 sm:mt-0'>
               Become a Vendor
-            </ButtonGray>
+            </ButtonBorderStroke>
           </section>
         </section>
       </section>

@@ -4,7 +4,7 @@ const ButtonBorderStroke = ({ children, className }) => {
   return (
     <main>
       <button
-        className={`w-[156px] h-[34px] rounded-[50px] font-bold text-[#0799DF] border-[#0799DF] border-3   ${className}`}
+        className={`w-[156px] h-[34px] rounded-[50px] font-bold text-white border-white border-3   ${className}`}
       >
         {children}
       </button>

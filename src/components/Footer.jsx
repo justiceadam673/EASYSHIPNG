@@ -5,7 +5,7 @@ import Twitter from "../assets/images/X.png";
 
 const Footer = () => {
   return (
-    <main className='bg-[#424242] max-sm:flex-col max-sm:space-y-10 max-md:px-[30px] max-md:space-x-5  w-full flex space-x-[155px] px-[97px] py-[44px] text-[#fff] h-auto'>
+    <main className='bg-white/70 max-sm:flex-col max-sm:space-y-10 max-md:px-[30px] max-md:space-x-5 max-lg:space-x-[30px] w-full flex space-x-[155px] px-[97px] py-[44px] text-black h-auto'>
       <section className='w-full '>
         <div className='flex text-[32px] font-bold items-center space-x-[10px]'>
           <img src='/Easyship 1.png' alt='' srcset='' />
@@ -16,47 +16,91 @@ const Footer = () => {
           <img src={Instagram} alt='Instagram' srcSet='' />
           <img src={Twitter} alt='X' srcSet='' />
         </div>
+        <div className='space-y-1 mt-[18px] '>
+          <h1 className='leading-[35px] text-black/70'>
+            Subscribe to our Newsletter
+          </h1>
+          <input
+            type='email'
+            name='email'
+            id='email'
+            placeholder='Email Address'
+            className='border-1 px-[20px] py-[5px] w-[318px] border-[#000]/20'
+          />
+        </div>
       </section>
       <section className='w-full'>
         <div>
-          <h2 className='text-[20px] font-bold mb-[32px] max-md:text-[18px] '>
-            About EasyShip
-          </h2>
-          <ul className='text-[20px] text-[#fff]/65 font-light space-y-[23px] max-md:text-[15px]'>
+          <ul className='text-[18px] text-black/70 font-light space-y-[23px] max-md:text-[15px]'>
             <li>
-              <a href=''>Home</a>
+              <a
+                href=''
+                className='hover:underline hover:decoration-dotted hover:decoration-[#000]/50'
+              >
+                About Us
+              </a>
             </li>
             <li>
-              <a href=''>Contact us</a>
+              <a
+                href=''
+                className='hover:underline hover:decoration-dotted hover:decoration-[#000]/50'
+              >
+                FAQ
+              </a>
             </li>
             <li>
-              <a href=''>Help desk</a>
+              <a
+                href=''
+                className='hover:underline hover:decoration-dotted hover:decoration-[#000]/50'
+              >
+                Support
+              </a>
             </li>
             <li>
-              <a href=''>Partners</a>
+              <a
+                href=''
+                className='hover:underline hover:decoration-dotted hover:decoration-[#000]/50'
+              >
+                Contact Us
+              </a>
             </li>
             <li>
-              <a href=''>FAQs</a>
+              <a
+                href=''
+                className='hover:underline hover:decoration-dotted hover:decoration-[#000]/50'
+              >
+                Locations
+              </a>
             </li>
           </ul>
         </div>
       </section>
+
       <section className='w-full'>
-        <h2 className='text-[20px] font-bold mb-[29px]  max-md:text-[18px] '>
-          Product
-        </h2>
-        <ul className='text-[20px] text-[#fff]/65 font-light space-y-[24px] max-md:text-[15px] '>
+        <ul className='text-[18px] text-black/70 font-light space-y-[24px] max-md:text-[15px] '>
           <li>
-            <a href=''>Testimonials</a>
+            <a
+              href=''
+              className='hover:underline hover:decoration-dotted hover:decoration-[#000]/50'
+            >
+              Terms of Service
+            </a>
           </li>
           <li>
-            <a href=''>How EasyShip works</a>
+            <a
+              href=''
+              className='hover:underline hover:decoration-dotted hover:decoration-[#000]/50'
+            >
+              Privacy Policy
+            </a>
           </li>
           <li>
-            <a href=''>Blog</a>
-          </li>
-          <li>
-            <a href=''>Service</a>
+            <a
+              href=''
+              className='hover:underline hover:decoration-dotted hover:decoration-[#000]/50'
+            >
+              Cookies Policy
+            </a>
           </li>
         </ul>
       </section>

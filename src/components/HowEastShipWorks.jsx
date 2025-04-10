@@ -1,12 +1,12 @@
 import React from "react";
 import Cards from "./UI/Cards";
-import Shop from "../assets/images/Vector.png";
-import Order from "../assets/images/Vector (1).png";
-import PickUp from "../assets/images/solar_delivery-bold.png";
+import Shop from "../assets/images/find my.png";
+import Order from "../assets/images/place an.png";
+import PickUp from "../assets/images/we pick.png";
 
 const HowEastShipWorks = () => {
   return (
-    <main className='mb-[37px] max-sm:mt-115 '>
+    <main className='mb-[37px] '>
       <h1 className='text-center text-[#000] mt-[76px]   text-[27px] font-extrabold max-sm:text-[20px]'>
         How EasyShip Works
         <section className='flex flex-wrap justify-center gap-6 mt-10'>
